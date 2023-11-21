@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: fantasy;
+    font-weight: 100;
+    font-size: 25px;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background: url("assets/images/test.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+.main_container {
+    position: fixed;
+    left: 30%;
+    top: 25%;
+    width: 40%;
+    height: 50%;
+    background-color: rgba(203, 119, 193, 0.85);
+    color: white;
+    border-radius: 50px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.param {
+    margin-top: 2%;
+    height: 34px;
+    width: 250px;
+    color: black;
+    background-color: rgba(248, 161, 237, 0.85);
+    border: 1px black solid;
+    border-radius: 20px;
+    padding-left: 40px;
+}
+
+.x {
+    margin-top: 20%;
+}
+
+.param_numbers {
+    margin-left: 150px;
+    color: #676767;
+}
+
+.column {
+    display: block;
+
+}
+
+.block {
+    position: relative;
+    margin-top: 20%;
+    height: 110px;
+    width: 250px;
+    color: black;
+    background-color: rgba(248, 161, 237, 0.85);
+    border: 1px black solid;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.block span {
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    color: #676767;
+    font-size: 20px;
+}
+
+.link {
+    text-decoration: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.cross {
+    right: 6px;
+    top: 10px;
+}
+
+.cell {
+    right: 62px;
+    top: 10px;
+    cursor: pointer;
+}
+.table_container {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -280px;
+    height: 395px;
+    overflow: auto;
+}
+.table {
+    width: 100%;
+    font-size: 20px;
+}
+.table th {
+    color: black;
+    background-color: rgba(248, 161, 237, 0.85);
+}
+.table td {
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+@media (max-height: 750px) {
+    .table_container {
+        height: 300px;
+    }
+}
+@media (max-width: 1250px) {
+    .block {
+        width: 200px;
+        font-size: 20px;
+    }
+
+    .param {
+        width: 200px;
+    }
+
+    .param_numbers {
+        margin-left: 75px;
+    }
+
+}
+@media (max-width: 1000px) {
+    .block {
+        width: 125px;
+        font-size: 15px;
+        margin-top: 42%;
+    }
+    .block span {
+        font-size: 14px;
+    }
+    .param {
+        width: 125px;
+        line-height: 31px;
+        font-size: 20px;
+        padding-left: 17px;
+    }
+
+    .x {
+        margin-top: 42%;
+    }
+}
+@media (max-width: 600px) {
+    .main_container {
+        width: 70%;
+        left: 15%;
+    }
+}
